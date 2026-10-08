@@ -149,6 +149,33 @@
       display: flex !important;
       opacity: 1 !important;
     }
+
+    /* Traditional Sanctum Footer (Matches Sacred Marigold Garland Trim) */
+    .sacred-footer {
+      background-color: #5D000F;
+      background-image: url('images/banner-header2.png');
+      background-repeat: repeat-x;
+      background-position: left top;
+      color: #ffffff;
+      padding-top: 85px;
+      padding-bottom: 45px;
+    }
+    .sacred-footer h3 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 1.25rem;
+    }
+    .sacred-footer a {
+      color: #ffffff;
+      opacity: 0.9;
+      transition: all 0.2s ease;
+    }
+    .sacred-footer a:hover {
+      opacity: 1;
+      color: #fef08a;
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body class="antialiased min-h-screen flex flex-col selection:bg-orange-300 selection:text-orange-950">
@@ -607,36 +634,73 @@
     </section>
 
     <!-- ========================================================
-         FOOTER & CONTACT DETAILS
+         FOOTER & CONTACT DETAILS (Matches Original 4-Column Design)
          ======================================================== -->
-    <footer id="contact" class="bg-white border-t border-[var(--border-color)] mt-auto py-12 px-4 text-xs text-[var(--text-muted)]">
-      <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-8 mb-8">
-        <div>
-          <h4 class="font-bold text-[var(--primary)] text-sm uppercase mb-2 font-cinzel">Pushpagiri Peetham</h4>
-          <p class="font-telugu leading-relaxed">
-            శ్రీ జగద్గురు పుష్పగిరి శంకరాచార్య మహాసంస్థానం. అవిచ్ఛిన్న శంకర పరంపర, దక్షిణ కాశీ దివ్య క్షేత్రం.
+    <footer id="contact" class="sacred-footer mt-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-7xl mx-auto">
+        
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12 mb-10">
+          
+          <!-- Column 1: Quick Links -->
+          <div>
+            <h3 class="font-bold text-white text-xl mb-4 font-sans tracking-wide">Quick Links</h3>
+            <ul class="space-y-2.5 text-sm text-white/90">
+              <li><a href="#peethadhipatulu" class="hover:text-amber-300 transition-colors">48th Peetadhipatulu</a></li>
+              <li><a href="javascript:void(0)" onclick="openMuttActivitiesModal()" class="hover:text-amber-300 transition-colors">Mutt Activites</a></li>
+              <li><a href="#festivals" class="hover:text-amber-300 transition-colors">Annual Festivals</a></li>
+              <li><a href="#gallery" class="hover:text-amber-300 transition-colors">Photos</a></li>
+              <li><a href="#discourses" class="hover:text-amber-300 transition-colors">Videos</a></li>
+              <li><a href="#contact" class="hover:text-amber-300 transition-colors">Contact</a></li>
+            </ul>
+          </div>
+
+          <!-- Column 2: About Temple -->
+          <div>
+            <h3 class="font-bold text-white text-xl mb-4 font-sans tracking-wide">About Temple</h3>
+            <ul class="space-y-2.5 text-sm text-white/90">
+              <li><a href="#history" class="hover:text-amber-300 transition-colors">History of Pushpagiri</a></li>
+              <li><a href="javascript:void(0)" onclick="openRiseModal()" class="hover:text-amber-300 transition-colors">The Rise of Pushpagiri Peetham</a></li>
+              <li><a href="javascript:void(0)" onclick="openGuruParamparaModal()" class="hover:text-amber-300 transition-colors">Vande Guru Paramparam</a></li>
+            </ul>
+          </div>
+
+          <!-- Column 3: Contact Us -->
+          <div>
+            <h3 class="font-bold text-white text-xl mb-4 font-sans tracking-wide">Contact Us</h3>
+            <div class="space-y-4 text-sm text-white/90 leading-relaxed">
+              <p>
+                CFR5+HH6, Beside Maruti Suzuki ARENA (Varun Motors, Hyderabad, Begumpet), Mayur Marg, Begumpet, Hyderabad, Telangana 500016
+              </p>
+              <div class="space-y-1">
+                <p>Phone – <a href="tel:+919849530641" class="hover:text-amber-300 font-semibold transition-colors">+91 9849530641</a></p>
+                <p>Email – <a href="mailto:pushpagirisankarapeetham.org" class="hover:text-amber-300 transition-colors">pushpagirisankarapeetham.org</a></p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Column 4: Timing -->
+          <div>
+            <h3 class="font-bold text-white text-xl mb-4 font-sans tracking-wide">Timing</h3>
+            <div class="space-y-2 text-sm text-white/90 leading-relaxed">
+              <p class="font-semibold text-white">Mon–Sun:</p>
+              <p>8:00 AM – 12:30 PM</p>
+              <p>6:00 PM – 9:00 PM</p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Bottom Copyright Row -->
+        <div class="pt-8 border-t border-white/20 flex flex-col sm:flex-row items-center justify-between text-xs text-white/80 gap-3">
+          <p>
+            Copyright © 2024 Pushpagiri Sankara Peetham, All Rights Reserved. 
+            <a href="javascript:void(0)" onclick="openPrivacyModal()" class="ml-1 underline hover:text-amber-300">Privacy Policy</a>
+          </p>
+          <p class="text-[11px] text-white/60 font-telugu">
+            శ్రీ జగద్గురు పుష్పగిరి శంకరాచార్య మహాసంస్థానం • అవిచ్ఛిన్న శంకర పరంపర
           </p>
         </div>
-        <div>
-          <h4 class="font-bold text-gray-900 text-xs uppercase mb-2">Quick Navigation</h4>
-          <ul class="space-y-1.5">
-            <li><a href="#home" class="hover:text-[var(--primary)]">Home</a></li>
-            <li><a href="#history" class="hover:text-[var(--primary)]">History of Pushpagiri</a></li>
-            <li><a href="#festivals" class="hover:text-[var(--primary)]">Annual Festivals</a></li>
-            <li><a href="#discourses" class="hover:text-[var(--primary)]">Swamiji Discourses</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4 class="font-bold text-gray-900 text-xs uppercase mb-2">Contact & Darshan</h4>
-          <p class="leading-relaxed">
-            Beside Maruti Suzuki ARENA (Varun Motors), Mayur Marg, Begumpet, Hyderabad, Telangana 500016<br>
-            Phone: <a href="tel:+919849530641" class="text-[var(--primary)] font-bold hover:underline">+91 9849530641</a><br>
-            Timings: 8:00 AM – 12:30 PM & 6:00 PM – 9:00 PM
-          </p>
-        </div>
-      </div>
-      <div class="max-w-7xl mx-auto pt-6 border-t border-gray-200 text-center text-gray-400 text-[11px]">
-        © 2026 Pushpagiri Sankara Peetham. All Rights Reserved. • Avicchinna Sankara Parampara
+
       </div>
     </footer>
 
@@ -678,6 +742,162 @@
         <div class="p-3 rounded-xl bg-orange-50 border border-orange-200 text-center font-mono text-[var(--primary)] font-bold mt-3">
           UPI ID: pushpagiripeetham@sbi
         </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Rise of Pushpagiri Peetham Modal -->
+  <div id="riseModal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-md hidden items-center justify-center p-4" onclick="closeRiseModal()">
+    <div class="sanctum-card rounded-2xl p-6 sm:p-8 max-w-2xl w-full relative bg-white max-h-[85vh] overflow-y-auto" onclick="event.stopPropagation()">
+      <div class="flex justify-between items-center border-b border-gray-200 pb-3 mb-4">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-wider text-[var(--primary)]">క్షేత్ర పీఠోదయ చరిత్ర</span>
+          <h4 class="font-bold text-gray-900 font-cinzel text-lg sm:text-xl">The Rise of Pushpagiri Peetham</h4>
+        </div>
+        <button onclick="closeRiseModal()" class="text-gray-400 hover:text-gray-700 text-lg p-1">✕</button>
+      </div>
+      <div class="space-y-4 text-sm text-gray-700 leading-relaxed">
+        <p>
+          For thousands of years, Pushpagiri was a strong spiritual centre known as a prominent Shaiva Peetham in the entire Telugu speaking region. His Holiness Sri Sri Sri Jagadguru Vidyaranya Swami transformed Pushpagiri Shaiva Peetham into Pushpagiri Sankaracharya Peetham.
+        </p>
+        <p>
+          Having realized the unique spiritual power in the land of Pushpagiri, His Holiness Sri Vidyaranya brought Pushpagiri Shaiva Peetham into the ambit of Jagadguru Sankaracharya Peethams.
+        </p>
+        <p>
+          This happened as part of Sri Vidyaranya Swami’s spiritual journey when he was the 12th Jagadguru of Sri Sringeri Sharada Peetham during the 14th Century.
+        </p>
+        <div class="p-4 rounded-xl border border-amber-200 bg-amber-50/70">
+          <p class="font-semibold text-amber-950">
+            For its unique significance as Raja Peetham, Pushpagiri Sankaracharya Peetham was named:
+          </p>
+          <p class="font-bold text-[var(--primary)] mt-1 font-telugu text-base">
+            ‘శ్రీ శ్రీ శ్రీ జగద్గురు పుష్పగిరి శంకరాచార్య మహా సంస్థానం’
+          </p>
+          <p class="text-xs text-amber-900 mt-1">
+            (Sri Sri Sri Jagadguru Pushpagiri Sankaracharya Maha Samsthanam), which is unique unlike the names of other Sankaracharya Peethams.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Vande Guru Paramparam Modal -->
+  <div id="guruParamparaModal" class="fixed inset-0 z-50 bg-black/85 backdrop-blur-md hidden items-center justify-center p-4" onclick="closeGuruParamparaModal()">
+    <div class="sanctum-card rounded-2xl p-6 sm:p-8 max-w-4xl w-full relative bg-white max-h-[90vh] overflow-y-auto" onclick="event.stopPropagation()">
+      <div class="flex justify-between items-center border-b border-gray-200 pb-3 mb-4">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-wider text-[var(--primary)]">అవిచ్ఛిన్న శంకర పరంపర</span>
+          <h4 class="font-bold text-gray-900 font-cinzel text-lg sm:text-xl">Vande Guru Paramparam (వందే గురు పరంపరామ్)</h4>
+        </div>
+        <button onclick="closeGuruParamparaModal()" class="text-gray-400 hover:text-gray-700 text-lg p-1">✕</button>
+      </div>
+
+      <div class="mb-6 p-4 rounded-xl bg-orange-50 border border-orange-200 text-center">
+        <p class="text-base sm:text-lg font-bold text-orange-950 font-telugu">
+          || నారసింహస్య తత్వజ్ఞం నానా శాస్త్రార్థ కోవిదమ్ ।<br>నౌమ్యహం నైష్ఠికం నిత్యం విద్యా శంకర భారతీ ||
+        </p>
+        <p class="text-xs text-orange-800 mt-1 italic">
+          || नारसिंहस्य तत्वज्ञं नाना शास्त्रार्थ कोविदम् । नोव्यहं नैष्ठिकं नित्यं विद्या शङ्कर भारती ||
+        </p>
+      </div>
+
+      <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
+        <div class="rounded-xl overflow-hidden border border-gray-200 bg-gray-50 shadow-sm cursor-pointer group" onclick="openPhoto('https://pushpagirisankarapeetham.org/wp-content/gallery/vande-guru-paramparam/Vande-Guru-Paramparam-4.jpg', 'Vande Guru Paramparam')">
+          <img src="https://pushpagirisankarapeetham.org/wp-content/gallery/vande-guru-paramparam/Vande-Guru-Paramparam-4.jpg" alt="Guru Parampara" class="w-full h-44 object-cover group-hover:scale-105 transition-transform">
+        </div>
+        <div class="rounded-xl overflow-hidden border border-gray-200 bg-gray-50 shadow-sm cursor-pointer group" onclick="openPhoto('https://pushpagirisankarapeetham.org/wp-content/gallery/vande-guru-paramparam/Vande-Guru-Paramparam-3.jpg', 'Vande Guru Paramparam')">
+          <img src="https://pushpagirisankarapeetham.org/wp-content/gallery/vande-guru-paramparam/Vande-Guru-Paramparam-3.jpg" alt="Guru Parampara" class="w-full h-44 object-cover group-hover:scale-105 transition-transform">
+        </div>
+        <div class="rounded-xl overflow-hidden border border-gray-200 bg-gray-50 shadow-sm cursor-pointer group" onclick="openPhoto('https://pushpagirisankarapeetham.org/wp-content/gallery/vande-guru-paramparam/Vande-Guru-Paramparam-1.jpg', 'Vande Guru Paramparam')">
+          <img src="https://pushpagirisankarapeetham.org/wp-content/gallery/vande-guru-paramparam/Vande-Guru-Paramparam-1.jpg" alt="Guru Parampara" class="w-full h-44 object-cover group-hover:scale-105 transition-transform">
+        </div>
+        <div class="rounded-xl overflow-hidden border border-gray-200 bg-gray-50 shadow-sm cursor-pointer group" onclick="openPhoto('https://pushpagirisankarapeetham.org/wp-content/gallery/vande-guru-paramparam/Vande-Guru-Paramparam-2.jpg', 'Vande Guru Paramparam')">
+          <img src="https://pushpagirisankarapeetham.org/wp-content/gallery/vande-guru-paramparam/Vande-Guru-Paramparam-2.jpg" alt="Guru Parampara" class="w-full h-44 object-cover group-hover:scale-105 transition-transform">
+        </div>
+        <div class="rounded-xl overflow-hidden border border-gray-200 bg-gray-50 shadow-sm cursor-pointer group" onclick="openPhoto('https://pushpagirisankarapeetham.org/wp-content/gallery/vande-guru-paramparam/Vande-Guru-Paramparam-7.jpg', 'Vande Guru Paramparam')">
+          <img src="https://pushpagirisankarapeetham.org/wp-content/gallery/vande-guru-paramparam/Vande-Guru-Paramparam-7.jpg" alt="Guru Parampara" class="w-full h-44 object-cover group-hover:scale-105 transition-transform">
+        </div>
+        <div class="rounded-xl overflow-hidden border border-gray-200 bg-gray-50 shadow-sm cursor-pointer group" onclick="openPhoto('https://pushpagirisankarapeetham.org/wp-content/gallery/vande-guru-paramparam/Vande-Guru-Paramparam-6.jpg', 'Vande Guru Paramparam')">
+          <img src="https://pushpagirisankarapeetham.org/wp-content/gallery/vande-guru-paramparam/Vande-Guru-Paramparam-6.jpg" alt="Guru Parampara" class="w-full h-44 object-cover group-hover:scale-105 transition-transform">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mutt Activities Modal -->
+  <div id="muttActivitiesModal" class="fixed inset-0 z-50 bg-black/85 backdrop-blur-md hidden items-center justify-center p-4" onclick="closeMuttActivitiesModal()">
+    <div class="sanctum-card rounded-2xl p-6 sm:p-8 max-w-4xl w-full relative bg-white max-h-[90vh] overflow-y-auto" onclick="event.stopPropagation()">
+      <div class="flex justify-between items-center border-b border-gray-200 pb-3 mb-4">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-wider text-[var(--primary)]">ధర్మ కార్యకలాపాలు</span>
+          <h4 class="font-bold text-gray-900 font-cinzel text-lg sm:text-xl">Mutt Activities (మఠం నిత్య సేవలు)</h4>
+        </div>
+        <button onclick="closeMuttActivitiesModal()" class="text-gray-400 hover:text-gray-700 text-lg p-1">✕</button>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+        <div class="p-4 rounded-xl bg-orange-50/70 border border-orange-200">
+          <h5 class="font-bold text-[var(--primary)] text-sm mb-1">📖 వేద పాఠశాల & విద్యా సేవ</h5>
+          <p class="text-xs text-gray-700 leading-relaxed">
+            వైదిక సంస్కృతి పునరుజ్జీవనం కొరకు నిరంతరం సాగుతున్న వేద పాఠశాలలో వందలాది విద్యార్థులకు ఉచిత వసతి, భోజనం మరియు గురుకుల విద్యా బోధన.
+          </p>
+        </div>
+        <div class="p-4 rounded-xl bg-orange-50/70 border border-orange-200">
+          <h5 class="font-bold text-[var(--primary)] text-sm mb-1">🍚 నిత్యాన్నదాన సేవ</h5>
+          <p class="text-xs text-gray-700 leading-relaxed">
+            పుష్పగిరి క్షేత్రంలో మరియు వివిధ శాఖలలో ప్రతిరోజూ వచ్చే వేలాది భక్తులకు పవిత్ర అన్నప్రసాద వితరణ.
+          </p>
+        </div>
+        <div class="p-4 rounded-xl bg-orange-50/70 border border-orange-200">
+          <h5 class="font-bold text-[var(--primary)] text-sm mb-1">🐄 గో సంరక్షణ సేవ</h5>
+          <p class="text-xs text-gray-700 leading-relaxed">
+            మఠం గోశాలలో దేశవాళీ గోవుల సంరక్షణ, నిత్య గోపూజ మరియు గోగ్రాస కైంకర్యాలు.
+          </p>
+        </div>
+        <div class="p-4 rounded-xl bg-orange-50/70 border border-orange-200">
+          <h5 class="font-bold text-[var(--primary)] text-sm mb-1">🚩 ధర్మ ప్రచార యాత్రలు</h5>
+          <p class="text-xs text-gray-700 leading-relaxed">
+            సనాతన ధర్మ రక్షణ, దేవాలయాల జీర్ణోద్ధరణ, విగ్రహ ప్రతిష్ఠలు మరియు స్వామివారి దివ్య ధర్మ ప్రవచనములు.
+          </p>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
+        <div class="rounded-xl overflow-hidden border border-gray-200 bg-gray-50 shadow-sm cursor-pointer group" onclick="openPhoto('https://pushpagirisankarapeetham.org/wp-content/gallery/mutt-activity/Mutt-Activity-3.jpg', 'Sri Sharada Chandramouleeswara Sannidhi')">
+          <img src="https://pushpagirisankarapeetham.org/wp-content/gallery/mutt-activity/Mutt-Activity-3.jpg" alt="Mutt Activity" class="w-full h-32 object-cover group-hover:scale-105 transition-transform">
+        </div>
+        <div class="rounded-xl overflow-hidden border border-gray-200 bg-gray-50 shadow-sm cursor-pointer group" onclick="openPhoto('https://pushpagirisankarapeetham.org/wp-content/gallery/mutt-activity/Mutt-Activity-1.jpg', 'Mutt Activity')">
+          <img src="https://pushpagirisankarapeetham.org/wp-content/gallery/mutt-activity/Mutt-Activity-1.jpg" alt="Mutt Activity" class="w-full h-32 object-cover group-hover:scale-105 transition-transform">
+        </div>
+        <div class="rounded-xl overflow-hidden border border-gray-200 bg-gray-50 shadow-sm cursor-pointer group" onclick="openPhoto('https://pushpagirisankarapeetham.org/wp-content/gallery/mutt-activity/Mutt-Activity-2.jpg', 'Mutt Activity')">
+          <img src="https://pushpagirisankarapeetham.org/wp-content/gallery/mutt-activity/Mutt-Activity-2.jpg" alt="Mutt Activity" class="w-full h-32 object-cover group-hover:scale-105 transition-transform">
+        </div>
+        <div class="rounded-xl overflow-hidden border border-gray-200 bg-gray-50 shadow-sm cursor-pointer group" onclick="openPhoto('https://pushpagirisankarapeetham.org/wp-content/gallery/mutt-activity/Mutt-Activity-4.jpg', 'Mutt Activity')">
+          <img src="https://pushpagirisankarapeetham.org/wp-content/gallery/mutt-activity/Mutt-Activity-4.jpg" alt="Mutt Activity" class="w-full h-32 object-cover group-hover:scale-105 transition-transform">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Privacy Policy Modal -->
+  <div id="privacyModal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-md hidden items-center justify-center p-4" onclick="closePrivacyModal()">
+    <div class="sanctum-card rounded-2xl p-6 sm:p-8 max-w-lg w-full relative bg-white" onclick="event.stopPropagation()">
+      <div class="flex justify-between items-center border-b border-gray-200 pb-3 mb-4">
+        <h4 class="font-bold text-gray-900 font-cinzel text-lg">Privacy Policy</h4>
+        <button onclick="closePrivacyModal()" class="text-gray-400 hover:text-gray-700 text-lg p-1">✕</button>
+      </div>
+      <div class="space-y-3 text-xs text-gray-700 leading-relaxed">
+        <p>
+          Sri Pushpagiri Sankara Peetham is dedicated to upholding the sanctity and privacy of every devotee and visitor.
+        </p>
+        <p>
+          Information shared with the Peetham—including seva registration, sankalpam names, gotrams, addresses for prasadam delivery, and donation receipts—is treated with the highest sacred confidentiality and never shared with any third party.
+        </p>
+        <p>
+          For any questions or privacy inquiries, devotees may contact the Matham office directly at:
+          <br><strong>Phone:</strong> +91 9849530641
+          <br><strong>Email:</strong> pushpagirisankarapeetham.org
+        </p>
       </div>
     </div>
   </div>
@@ -724,11 +944,43 @@
       document.getElementById('donationModal').classList.remove('modal-active');
     }
 
+    function openRiseModal() {
+      document.getElementById('riseModal').classList.add('modal-active');
+    }
+    function closeRiseModal() {
+      document.getElementById('riseModal').classList.remove('modal-active');
+    }
+
+    function openGuruParamparaModal() {
+      document.getElementById('guruParamparaModal').classList.add('modal-active');
+    }
+    function closeGuruParamparaModal() {
+      document.getElementById('guruParamparaModal').classList.remove('modal-active');
+    }
+
+    function openMuttActivitiesModal() {
+      document.getElementById('muttActivitiesModal').classList.add('modal-active');
+    }
+    function closeMuttActivitiesModal() {
+      document.getElementById('muttActivitiesModal').classList.remove('modal-active');
+    }
+
+    function openPrivacyModal() {
+      document.getElementById('privacyModal').classList.add('modal-active');
+    }
+    function closePrivacyModal() {
+      document.getElementById('privacyModal').classList.remove('modal-active');
+    }
+
     window.addEventListener('keydown', (e) => {
       if (e.key === 'Escape') {
         closeVideo();
         closePhoto();
         closeDonationModal();
+        closeRiseModal();
+        closeGuruParamparaModal();
+        closeMuttActivitiesModal();
+        closePrivacyModal();
       }
     });
   </script>
